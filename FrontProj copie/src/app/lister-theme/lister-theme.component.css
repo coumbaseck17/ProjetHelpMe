@@ -1,0 +1,11 @@
+.div-color{
+  background-color: #7DC2A5;
+}
+
+.div-border{
+  border-radius: 10px 100px / 120px;
+}
+
+.und-text {
+  text-decoration: underline solid #7DC2A5;
+}

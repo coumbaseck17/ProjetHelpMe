@@ -1,0 +1,26 @@
+<div>
+  <h6>Pour reccomander cet étudiant choissisez le theme:</h6>
+  <div class="form-group row gap-2 mb-3" >
+    <div class="col-4">
+      <input type="text" class="form-control" id="Id" [(ngModel)]="nb">
+    </div>
+    <div class="col" *ngFor="let th of this.liste; index as i">
+    <div *ngIf="nb==th._num">
+      <button class="btn button3 gap-2 mb-3" routerLink="/DetailsEtudiant/{{etu._id}}" (click)="like(etu._id,th._num)" >Valider</button>
+    </div>
+  </div>
+    </div>
+</div>
+<div>
+  <h6>Pour déconseiller cet étudiant choissisez le theme:</h6>
+  <div class="form-group row gap-2 mb-3" >
+    <div class="col-4">
+      <input type="text" class="form-control" id="Id2" [(ngModel)]="nb2">
+    </div>
+    <div class="col" *ngFor="let th of this.liste; index as i">
+      <div *ngIf="nb2==th._num">
+        <button class="btn button3 gap-2 mb-3" routerLink="/DetailsEtudiant/{{etu._id}}" (click)="dislike(etu._id,th._num)" >Valider</button>
+      </div>
+    </div>
+  </div>
+</div>

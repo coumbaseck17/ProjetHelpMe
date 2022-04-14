@@ -1,0 +1,13 @@
+<div class="col mb-6" >
+  <div class="text-dark div-color p-2 div-border border gap-2 mb-3">
+    <h4 class="text-center">{{theme._titre}}</h4>
+    <p>{{theme._description}}</p>
+    <p>Mots cles: {{theme._motscles}}</p>
+    <p>Date creation: {{theme._date}}</p>
+    <p>@{{theme._nomcreateur}}</p>
+    <button class="btn button3 col-6 gap-2 mb-6" routerLink="Referents/{{theme._num}}"> Referents</button>
+    <button class="btn col-4 gap-2 mb-6" (click)="eliminer()" routerLink="EliminerTheme/{{theme._num}}"><img src="assets/trash.png" height ="30" width="30" /></button>
+  </div>
+</div>
+
+<!--routerLink="EliminerTheme/{{theme._num}}-->

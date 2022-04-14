@@ -1,0 +1,15 @@
+<p class="und-text">Liste des etudiants</p>
+<div class="col" *ngFor="let th of this.liste2; index as i">
+  <div class="text-dark div-color p-2 div-border border border-dark gap-2 mb-3">
+    <h4 class="text-center">
+      <img src="assets/user.png" height ="30" width="30" />
+      {{th._prenom}} <button  class=" btn col-6 text-center color " routerLink="/DetailsEtudiant/{{i}}">Détails</button>
+    </h4>
+    <div class="text-center">
+    </div>
+    </div>
+</div>
+
+
+
+

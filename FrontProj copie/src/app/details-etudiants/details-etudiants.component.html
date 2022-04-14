@@ -1,0 +1,20 @@
+<div class="col mb-6" >
+  <div class="text-dark div-color p-2 div-border border gap-2 mb-3">
+    <h4 class="text-center">
+      <img src="assets/user.png" height ="50" width="50" >
+    </h4>
+    <h4
+      class="text-center">{{etu._nom}} {{etu._prenom}}</h4>
+    <h6>{{etu._nbLike}} Likes</h6>
+    <p>Contact: {{etu._contact}}</p>
+    <p>Ville: {{etu._ville}}</p>
+    <div >
+      <button class="btn col-3 " routerLink="Like/{{etu._id}}"> <img src="../../assets/like.png" height ="20" width="20" /></button>
+      <button class="btn col-3 " routerLink="Dislike/{{etu._id}}"> <img src="../../assets/dislike.png" height ="20" width="20" /></button>
+      <button class="btn col-6 " routerLink="Reglages/{{etu._id}}"> <img src="assets/reglages.png" height ="30" width="30" /></button>
+    </div>
+  </div>
+</div>
+
+
+

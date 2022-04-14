@@ -1,0 +1,17 @@
+<div class="col-12">
+  <input type="text" class="form-control  " id="recherche2" placeholder="Saisir le nom de l'étudiant" [(ngModel)]="nomRecherche">
+  <button class="btn col-3 gap-2 mb-2 " (click)="recherche2()">🔎</button>
+</div>
+<div class="und-text">
+  Liste des referents du thème {{this.theme._titre}}
+  <button class="btn col-2 gap-2 mb-6" (click)="trier()"> <img src="assets/trier.png" height ="30" width="30" /></button>
+</div>
+<div class="col" *ngFor="let th of this.theme._listeReferents; index as i">
+  <div class="text-dark div-color p-2 div-border border border-dark gap-2 mb-3">
+    <h4 class="text-center">
+      <img src="assets/user.png" height ="30" width="30" />
+      {{th._prenom}}
+      <button  class=" btn col-6 text-center color " routerLink="/DetailsEtudiant/{{th._id}}">Détails</button>
+    </h4>
+  </div>
+</div>
